@@ -22,3 +22,24 @@ This repository present a fruit detection model using a neural network. The aim 
 - In the data folder you will move the dataset from roboflow
 - Unzip the your data, it should look like this.
 ![Folder](images/folder.png)
+- Open your anaconda prompt and go the path of the python script 'PrepareDataset.py' in pytorch/data
+- Enter this command into the console:
+`$ python PrepareDataset.py --data=Fruits --name=FruitsDataset`
+- Now open a new anacconda prompt and go to the path pytorch-ssd folder and enter this command into the console:
+`$ python train_ssd.py --dataset-type=voc --data=data/FruitsDataset --model-dir=models/FruitsModel --batch-size=8 --workers=0 --epochs=10`
+- Finally, let's transform our model to ONNX format, this will optimize our model. In the same console we train the model, we will put this command:
+`$ python onnx_export.py --model-dir=models/FruitsModel`
+- Perfect, now save the .onnx  and the labels.txt file created in google Drive and download in your Jetson Nano.
+## Running the model in your Jetson Nano
+* Download your model.onnx and the labels.txt to /jetson-inference/python/training/detection/ssd/models/"YourModelName"/
+* Run the docker container in the terminal
+
+`$ cd jetson-inference`
+`$ docker/run.sh`
+* Then go to the training directory
+
+`$ cd python/training/detection/ssd/`
+* Run your model using the webcam 
+
+`$ detectnet --model=models/FruitsModels/fruits.onnx --labels=models/FruitsModels//labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0`
+* The first time you run your model it will take a while
