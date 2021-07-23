@@ -36,7 +36,7 @@ This repository present a fruit detection model using a neural network. The aim 
 
 - Perfect, now save the .onnx  and the labels.txt file created in google Drive and download in your Jetson Nano.
 ## Running the model in your Jetson Nano
-* Download your model.onnx and the labels.txt to /jetson-inference/python/training/detection/ssd/models/"YourModelName"/
+* Download your model.onnx and the labels.txt to /jetson-inference/python/training/detection/ssd/models/FruitsModel/
 * Run the docker container in the terminal
 
 `$ cd jetson-inference`
