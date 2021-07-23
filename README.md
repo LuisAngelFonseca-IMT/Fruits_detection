@@ -5,4 +5,9 @@ This repository present a fruit detection model using a neural network. The aim 
 - It's important to found images from diferents perspectives and with others object to have a rich dataset.
 ![Fruits_search](images/fruits_search.png)
 - I save the images with numbers, example 001, 002 and 003
+## Label our images 
+- Download the Vott repository [here](https://github.com/microsoft/VoTT)
+- In the github repository are al the instruction to use the application
+- Start a new project and start labeling the images.
+- [Here](https://blog.roboflow.com/tips-for-how-to-label-images/) are some tips to correctly labels our images
 
