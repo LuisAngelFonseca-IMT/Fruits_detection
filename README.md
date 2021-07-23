@@ -10,4 +10,4 @@ This repository present a fruit detection model using a neural network. The aim 
 - In the github repository are al the instruction to use the application
 - Start a new project and start labeling the images.
 - [Here](https://blog.roboflow.com/tips-for-how-to-label-images/) are some tips to correctly labels our images
-
+![Labeled Images](images/labeled_images.png)
