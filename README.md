@@ -31,7 +31,7 @@ This repository present a fruit detection model using a neural network. The aim 
 `$ python train_ssd.py --dataset-type=voc --data=data/FruitsDataset --model-dir=models/FruitsModel --batch-size=8 --workers=0 --epochs=10`
 
 - Finally, let's transform our model to ONNX format, this will optimize our model. In the same console we train the model, we will put this command:
-- 
+
 `$ python onnx_export.py --model-dir=models/FruitsModel`
 
 - Perfect, now save the .onnx  and the labels.txt file created in google Drive and download in your Jetson Nano.
