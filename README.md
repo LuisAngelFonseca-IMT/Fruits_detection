@@ -1,5 +1,19 @@
 # Fruits detection
 This repository present a fruit detection model using a neural network. The aim is to build small scale dataset of two fruits, apples and pineapples, then using a third software to apply data augmentation and finally using transfer learning to implement a object detection algorithm in a Jetson Nano.
+## Install VoTT
+- Dowload the exe file from Microsoft VoTT github repository [here](https://github.com/Microsoft/VoTT/releases).
+- Execute the downloaded file
+- Installation will start automatically
+## Crate a project in VoTT
+- Open the app and go to the home page
+- Click on "New Project"
+- Choose a new of your project
+- Securyy token choose "Generate Neew Security Token"
+- In origin connection, click on 'Add Connection', choose a name, a description if you want and select in provider"System local files", select the path were you saved your images.
+- In destination connection, do the same but now chose a diferent path, were you want to export your dataset
+- then, add a informative description.
+- Leave in 15 the frames per second
+- Finally, add the tags names and save the project.
 ## Create our dataset
 - Let's found al least 30 images for each class. 30 apples and 30 pineaple
 - It's important to found images from diferents perspectives and with other objects to have a rich dataset.
