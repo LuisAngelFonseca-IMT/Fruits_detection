@@ -14,16 +14,13 @@ This repository present a fruit detection model using a neural network. The aim 
 - Then, add a informative description.
 - Leave in 15 the frames per second
 - Finally, add the tags names and save the project.
-![VoTT project](images/fruits_search.png)
+![VoTT project](images/vott_project.png)
 ## Create our dataset
 - Let's found al least 30 images for each class. 30 apples and 30 pineaple
 - It's important to found images from diferents perspectives and with other objects to have a rich dataset.
 ![Fruits_search](images/fruits_search.png)
 - I save the images with numbers, example 001, 002 and 003
 ## Label our images 
-- Download the Vott repository [here](https://github.com/microsoft/VoTT)
-- In the github repository there are all the instructions to use the application
-- Start a new project and start labeling images.
 - [Here](https://blog.roboflow.com/tips-for-how-to-label-images/) are some tips to correctly label our images
 ![Labeled Images](images/labeled_images.png)
 ## Data augmentation
@@ -32,6 +29,7 @@ This repository present a fruit detection model using a neural network. The aim 
 - Apply data augmentation techniques
 - Create your dataset
 - Download the new dataset in Pascal voc format
+- [Here](https://drive.google.com/drive/folders/1RgfVvaq2wzZmYM6PVujfd7wZ6Ak4nB2Y?usp=sharing) is the datataset ready.
 ## Train the mobilenet ssd neural network
 - Fisrt download this [file](https://drive.google.com/u/0/uc?id=1rKiFl4WwzcbQ4Qbs_y4MbU9IGI3dfzLS&export=download) and install the requirements file
 - In the data folder you will move the dataset from roboflow
