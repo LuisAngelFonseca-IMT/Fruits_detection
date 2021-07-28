@@ -7,13 +7,14 @@ This repository present a fruit detection model using a neural network. The aim 
 ## Crate a project in VoTT
 - Open the app and go to the home page
 - Click on "New Project"
-- Choose a new of your project
-- Securyy token choose "Generate Neew Security Token"
-- In origin connection, click on 'Add Connection', choose a name, a description if you want and select in provider"System local files", select the path were you saved your images.
+- Choose a name for your new project
+- For security token choose "Generate New Security Token"
+- In origin connection, click on 'Add Connection', choose a name, a description if you want and select in provider "System local files", select the path were you saved your images.
 - In destination connection, do the same but now chose a diferent path, were you want to export your dataset
-- then, add a informative description.
+- Then, add a informative description.
 - Leave in 15 the frames per second
 - Finally, add the tags names and save the project.
+![VoTT project](images/fruits_search.png)
 ## Create our dataset
 - Let's found al least 30 images for each class. 30 apples and 30 pineaple
 - It's important to found images from diferents perspectives and with other objects to have a rich dataset.
