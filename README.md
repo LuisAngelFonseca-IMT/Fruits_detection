@@ -62,5 +62,9 @@ This repository present a fruit detection model using a neural network. The aim 
 `$ detectnet --model=models/FruitsModels/fruits.onnx --labels=models/FruitsModels//labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0`
 * The first time you run your model it will take a while
 
+
+### Video of the final result
+[Video](https://www.youtube.com/watch?v=CqczD6VZbg4)
+
 ## Prepare Jetson Nano to start running Deep Learning models 
 [Here](https://github.com/LuisAngelFonseca-IMT/JetsonNANOCustomDataset/blob/main/README.md)
